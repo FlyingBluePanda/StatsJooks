@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "statsjooks-e80dd",
+    "statsjooks": "statsjooks-e80dd",
+    "newstatsjooks": "statsjooks-e80dd",
+    "staging": "jooks-stats",
+    "production": "statsjooks-e80dd"
+  },
+  "targets": {
+    "statsjooks-e80dd": {
+      "hosting": {
+        "statsjooks-e80dd": [
+          "statsjooks-e80dd"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

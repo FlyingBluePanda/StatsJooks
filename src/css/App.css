@@ -1,0 +1,478 @@
+/* ---------------------------------------------- */
+/* --------- Titres/textes ---------------------- */
+/* ---------------------------------------------- */
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('GothamRounded-Bold.otf') format('opentype'),
+       url('GothamRounded-Bold.woff') format('woff'),
+       url('GothamRounded-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('GothamRounded-Medium.otf') format('opentype'),
+       url('GothamRounded-Medium.woff') format('woff'),
+       url('GothamRounded-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('GothamRounded-Bold.otf') format('opentype'),
+       url('GothamRounded-Bold.woff') format('woff'),
+       url('GothamRounded-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+thead th {
+  font-weight: bold;
+}
+
+tbody td {
+  font-weight: normal;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.menu button.active {
+  border-bottom: 2px solid black;
+}
+
+
+.table_header {
+  font-size: 20px;
+  font-family: 'Gotham Rounded';
+  font-weight: "bold"
+}
+
+.table_body {
+  font-size: 20px;
+  font-family: 'Gotham Rounded';
+  font-weight: 'normal'
+}
+.gotham-rounded-bold {
+  font-family: 'Gotham Rounded', sans-serif;
+  font-weight: bold;
+}
+
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+.subtitleNavbar {font-size: 18px; font-family: 'Gotham Rounded', sans-serif; color: rgb(255, 255, 255); text-decoration: none;}
+
+.titleNavbar {font-size: 25px; font-family: 'Gotham Rounded', sans-serif; text-decoration: none; color: #57C528;}
+
+.titleForm {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+.quizz-question {
+  width: 100%;
+  height: 50px;
+}
+
+.titleTable { background-color: rgb(42, 44, 44); color: rgb(247, 243, 243)}
+
+
+/* ---------------------------------------------- */
+/* --------- Containers ------------------------- */
+/* ---------------------------------------------- */
+
+.Modal { 
+  position: absolute;
+  background-color: #57c528;
+  overflow: scroll;
+}
+
+.box-quizz {
+  border: solid 6px rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  transition: "all .2s";
+  /* overflow-x: scroll; */
+  display: inline-block;
+}
+
+.admin-container {
+  padding: 20px;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+}
+
+.btn-group .btn {
+  margin-right: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #57c528;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.statistics-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.statistics-table td,
+.statistics-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.statistics-table th {
+  background-color: #f2f2f2;
+}
+
+.statistics-table tr:last-child {
+  border-top: 2px solid #ccc;
+}
+
+.statistics-table tr:last-child td:first-child {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/* ---------------------------------------------- */
+/* --------- Eléments --------------------------- */
+/* ---------------------------------------------- */
+.txt-intro {
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+td:hover:nth-child(1), td:hover:nth-child(2) {background-color: #f58484;}
+
+td:hover:nth-child(n+3) {background-color: #43b6d3;}
+
+tr:nth-child(4n + 1) td,
+tr:nth-child(4n + 3) td {
+  background-color: rgba(233, 229, 229, 0.925);
+}
+
+
+.inputbg-blue { 
+  color: white;
+  border: none;
+  background-color: rgba(108, 201, 207, 0.1)
+}
+.custom-button {
+  background-color: white;
+  color: #43b6d3;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-button.active {
+  background-color: #57C528;
+}
+.input-quizz {
+  color: black;
+  border: none;
+  background-color: rgba(108, 201, 207, 0.1);
+  width: 40%;
+}
+
+.img-quizz {
+  width: 30%;
+}
+
+.setClose {
+  float: right;
+  color: red;
+}
+
+.btnAnswer {
+  border: solid 1px #57C528;
+  background-color: white;
+  margin-top: 15px;
+  padding: 15px 0 15px;
+}
+
+.btnAnswer:hover {
+  background-color: white;
+}
+
+/* ---------------------------------------------- */
+/* --------- classes CSS importées --------------- */
+/* ---------------------------------------------- */
+
+
+
+.orange { background-color:#F05537; border: 1px none #dddddd;}
+
+.btnAnswer{
+  border-color: white;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 0.7s ease-in-out;
+}
+
+.btnAnswer:hover {background-position: 0;}
+
+
+/* ---------------------------------------------- */
+/* --------- classes CSS à un paramètre---------- */
+/* ---------------------------------------------- */
+
+.mt15 { margin-top: 15%;}
+
+.ftsize25 { font-size: 25px; font-family: 'Gotham Rounded', sans-serif; }
+.ftsize55 { font-size: 55px; font-weight: bold; font-family: 'Gotham Rounded', sans-serif; }
+
+.hide-error { visibility: hidden;}
+
+.fullHeight{height: 100%;}
+
+.colorWrite {color: black;}
+
+.bg-grey { background-color: grey;}
+
+.w100 { width: 100%;}
+.w40 { width: 40%;}
+.w20 { width: 20%;}
+
+.ov {overflow: scroll;}
+
+.space-right { margin-right: 7px;}
+
+.msgError { color: red;}
+
+.subtitleNavbar:hover, .titleNavbar:hover { color: #0C243C}
+
+.blueFont {color: #5cb8c9;}
+
+.float-right {float: right}
+
+.logo {
+  width: 30%;
+  height: auto;
+  max-width: 1000px;
+}
+table.statistics-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.statistics-table td,
+table.statistics-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table.statistics-table th {
+  background-color: #f2f2f2;
+}
+
+table.statistics-table tr:last-child {
+  border-top: 2px solid #ccc;
+}
+
+table.statistics-table tr:last-child td:first-child {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh; /* set a maximum height to avoid the image overflowing the screen on smaller devices */
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/*  Media-queries custom, leur classe css parente doit être déclarée au dessus  */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1100px) {
+
+  .Modal { 
+    left: 25%; 
+    top: 15%;
+    width: 55%;
+    height: 65%;}
+
+  .interAdmin { margin-right: 35px; margin-left: 35px}
+
+  .btnAnswer {width: 51%;}
+
+  .quizz-question {font-size: 20px;}
+}
+
+@media screen and (min-width: 751px) and (max-width: 1050px) {
+  .box-quizz {width: 100%; }
+
+  .chartQuizz {height: 1000px;}
+
+  .Modal {
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+  }
+
+  .btnAnswer {width: 51%;} 
+
+  .admin-co-div input{width: 30%;}
+  
+  .admin-co-div label {width: 15%;}
+}
+  
+@media screen and (min-width: 451px)  and (max-width: 750px) {
+
+  .admin-co-div input{width: 90%;}
+  
+  .admin-co-div label {width: 90%;}
+
+  .Modal {
+    left: 0%;
+    width: 100%;
+    height: 70%;
+  }
+
+  .box-quizz {width: 100%; }
+
+  .btnAddEtp, .inputAddEtp {width: 60%;}
+
+  .input-quizz {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .img-quizz {width: 40%;}
+
+  .btnAnswer {width: 51%;} 
+
+}
+  
+@media screen and (min-width: 301px) and (max-width: 450px) {
+  .Modal {width: 100%;}
+
+  .btnAddEtp, .inputAddEtp {width: 90%;}
+
+  .box-quizz {
+    width: 100%;
+    height: 460px;
+  }
+
+  .txt-intro { width: 100%; font-size: 14px;}
+
+  .input-quizz {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .img-quizz {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 150px;
+  }
+
+  .btnAnswer {width: 100%;}
+
+  .title-quizz {height: 30px;}
+
+  .interAdmin button { margin-top: 10px; }
+}
+  
+@media screen and (max-width: 300px) {
+
+  .box-quizz {
+    width: 100%;
+    height: 640px;
+  }
+
+  .btnAnswer { width:  80%;}
+
+  .img-quizz {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  .img-quizz {width: 60%;}
+  
+  .progressBar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progress {
+    height: 20px;
+    background-color: #57C528;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+}
+
+
+  

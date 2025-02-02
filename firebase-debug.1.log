@@ -1,0 +1,153 @@
+[debug] [2025-01-08T14:49:26.596Z] ----------------------------------------------------------------------
+[debug] [2025-01-08T14:49:26.598Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LG\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2025-01-08T14:49:26.599Z] CLI Version:   13.29.1
+[debug] [2025-01-08T14:49:26.599Z] Platform:      win32
+[debug] [2025-01-08T14:49:26.599Z] Node Version:  v23.5.0
+[debug] [2025-01-08T14:49:26.599Z] Time:          Wed Jan 08 2025 15:49:26 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2025-01-08T14:49:26.599Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-08T14:49:26.655Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-08T14:49:26.655Z] > authorizing via signed-in user (laure@mile.eu.com)
+[debug] [2025-01-08T14:49:26.655Z] [iam] checking project statsjooks-e80dd for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-01-08T14:49:26.656Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:26.656Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:26.657Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd:testIamPermissions [none]
+[debug] [2025-01-08T14:49:26.657Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd:testIamPermissions x-goog-quota-user=projects/statsjooks-e80dd
+[debug] [2025-01-08T14:49:26.657Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-08T14:49:27.335Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd:testIamPermissions 200
+[debug] [2025-01-08T14:49:27.335Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-08T14:49:27.336Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:27.336Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:27.336Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/statsjooks-e80dd/serviceAccounts/statsjooks-e80dd@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-01-08T14:49:27.336Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/statsjooks-e80dd/serviceAccounts/statsjooks-e80dd@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-01-08T14:49:27.937Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/statsjooks-e80dd/serviceAccounts/statsjooks-e80dd@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-01-08T14:49:27.937Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/statsjooks-e80dd/serviceAccounts/statsjooks-e80dd@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'statsjooks-e80dd'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-01-08T14:49:27.941Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:27.942Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:27.942Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd [none]
+[debug] [2025-01-08T14:49:28.128Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd 200
+[debug] [2025-01-08T14:49:28.129Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/statsjooks-e80dd {"projectNumber":"906804871168","projectId":"statsjooks-e80dd","lifecycleState":"ACTIVE","name":"StatsJooks","labels":{"firebase":"enabled"},"createTime":"2023-01-24T11:11:04.270Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-01-08T14:49:28.131Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.132Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.132Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.132Z] Checked if tokens are valid: true, expires at: 1736351318554
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-01-08T14:49:28.133Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.133Z] Checked if tokens are valid: true, expires at: 1736351318554
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-01-08T14:49:28.134Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.134Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.134Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-08T14:49:28.134Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/statsjooks-e80dd
+[debug] [2025-01-08T14:49:28.136Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-08T14:49:28.137Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/statsjooks-e80dd
+[debug] [2025-01-08T14:49:28.139Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudbuild.googleapis.com [none]
+[debug] [2025-01-08T14:49:28.139Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudbuild.googleapis.com x-goog-quota-user=projects/statsjooks-e80dd
+[debug] [2025-01-08T14:49:28.140Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/artifactregistry.googleapis.com [none]
+[debug] [2025-01-08T14:49:28.141Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/artifactregistry.googleapis.com x-goog-quota-user=projects/statsjooks-e80dd
+[debug] [2025-01-08T14:49:28.932Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudbuild.googleapis.com 200
+[debug] [2025-01-08T14:49:28.932Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-01-08T14:49:28.955Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-08T14:49:28.955Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-01-08T14:49:28.956Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/artifactregistry.googleapis.com 200
+[debug] [2025-01-08T14:49:28.957Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-01-08T14:49:28.971Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-08T14:49:28.971Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/statsjooks-e80dd/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-08T14:49:28.971Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.971Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:28.971Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/statsjooks-e80dd/adminSdkConfig [none]
+[debug] [2025-01-08T14:49:29.627Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/statsjooks-e80dd/adminSdkConfig 200
+[debug] [2025-01-08T14:49:29.627Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/statsjooks-e80dd/adminSdkConfig {"projectId":"statsjooks-e80dd","databaseURL":"https://statsjooks-e80dd-default-rtdb.firebaseio.com","storageBucket":"statsjooks-e80dd.appspot.com","locationId":"us-central"}
+[debug] [2025-01-08T14:49:29.628Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:29.628Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:29.628Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs [none]
+[debug] [2025-01-08T14:49:29.858Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs 200
+[debug] [2025-01-08T14:49:29.858Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs {"configs":[{"name":"projects/statsjooks-e80dd/configs/google"}]}
+[debug] [2025-01-08T14:49:29.859Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:29.859Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:29.859Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables [none]
+[debug] [2025-01-08T14:49:30.041Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables 200
+[debug] [2025-01-08T14:49:30.041Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables {"variables":[{"name":"projects/statsjooks-e80dd/configs/google/variables/service_key_base64","updateTime":"2024-08-18T16:36:02.633850990Z"}]}
+[debug] [2025-01-08T14:49:30.042Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:30.042Z] Checked if tokens are valid: true, expires at: 1736351318554
+[debug] [2025-01-08T14:49:30.042Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables/service_key_base64 [none]
+[debug] [2025-01-08T14:49:30.235Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables/service_key_base64 200
+[debug] [2025-01-08T14:49:30.235Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/statsjooks-e80dd/configs/google/variables/service_key_base64 {"name":"projects/statsjooks-e80dd/configs/google/variables/service_key_base64","updateTime":"2024-08-18T16:36:02.633850990Z","text":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAic2hpbmluZy1oZWF0LTIwMyIsCiAgInByaXZhdGVfa2V5X2lkIjogIjdlZmUzY2Q3ZDllYmE4NWVhOWE4NjEzOTc3NTZmZjUyMzIwMDRkOTUiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRRG1vRlRKWEFsU29pcDNcbkt1RGNaQWNWa0lFbU5oODMwNHBTKzdzb3VSTE9DUVdNczJBWXYwM1A3dXNWclAwRmxVY0NDOWNoKzA2Q0lVd0JcbnlmV2xOT0ZYU0RzVmJTUGFBdWFpNlVxcUNxNGkzcm9nQzNzYmRjSHFyeUV1TDk0WkptQXJ0d3VEcDFVTi9RSVRcbitBalRmeEZNbVhZcDNRZml4UmMrK3plNnNLT0ZDZERmMzZxT2ZHR3NhSFpWcmtGMFZSTlZSeU5BR3ZSVEUzak5cblhQVnhnNnNITktpV1FrSkNRblhGV1RZbzdJaFlMTWptRjNyZ3ppSEF4Mm1iUFpWcy8rZDk0ejZtZlYwTld5WmhcbmUxMUZMdTBrNWYwcnVHdXZZS3NIeXZ4NW13Ukw4SFYzN3JIa0M1b0NQVFdFUVg2eEZMYmJ5U2gvU3kwWTg5OXlcbnFkMVpBMnA1QWdNQkFBRUNnZjhQVUpaUXlNdlZzTzhnK3JmejZyQ052Z3JWZnNLVDhuZzlDbnBqT2VjRng1T1dcbnhGS2RVaGJZdUFUa2E1aGh4b2Z3bXRpdWFRSE5vbWhwdGYrWitPajk0czRKbmpYRFJHNE1ZM0dSMlNPM0xSTXZcbkRaUWZQcktoNHY5UkVkeXR6dDZVQ0pPN0ttRjdqRkdYQWVHVUtkdjhPalNla3c3ekFDT0xDeU9vUWhLWnd1elRcbkFKeDkzQzVPUHZ1TE14QktxYkhrMVR2eERhZFpUUU1NU1lIT0tFZ25xNDdXaVZzYlhGQlVSMU1FNzVZQnBJdXNcbmx3Q1k0bFEvNHpRNWVMOVFKN2NzZVdyRUFwaU5ReFVwaEhKUnB6OU40V3ZuZHF5cUNqSEZNb0ZoYzhVMWN5MVFcbnRDMFFYWVhmTGZTKy85MTVtL2s4TkIzdkpWNXJPbjVlOW94WXErVUNnWUVBK2pTK3BHdGF6U1FOTmpWS29zdzRcbmVEZTlFQ2IyTjBxNzlQNjBSaGdidXEzbUcvdFJtMEt5Qm9xUE9WL2NXZG11WXJ0S3BMV2RhQWhCMDdyUW40VXpcbnNncXNkZWxHK2FhMjBYVGVqUVdLcWFPWktyNXE2QUpNVTZ0My9yL3Rka0VVWVJ6WjdvZGtPYlR4VXNnNExhdGJcblhvVG0wWG9uSitoNjAyT3d5NC9XOHRNQ2dZRUE2L2VENEpTQTNWVEFVbG5pQUt3NjdSV1hOSnhZQWtWREJoVnpcbkptMkV2bmdsc2lFTDJZdGM3RjhMY01VbEwxenVqcElzRDVaUDgvRit3VjNIdk9sRVA0NTVMb21hV3ZCUGU3Wm1cbmVGeEJZa01qeHB3MXZmeXREdTBEaTV3eXoySGxWQ0NqOUFrMUlINzBJQmNQSzhKWVBKQnpvRDFxd0hMRnFLMitcbkRTQTM1Z01DZ1lCTU5PNXY4OGJIUHBqTGp2VzVtZ3dGQ2EwTEUyTGd1bUYvSUdqV0JKZkZoeHZVSC9yZUdEVlNcbjZyYnUyYlNxcFRPSkhOU0NVRkt1RWYzQ3VGNjhoM3lVV00zb1ovSFhMaUQyc09ycjl1a2gvQk0xd3FPYklNQVFcbnArUTNja3VvUGZBd0YvS0V4VFlRb1h6eklzcUJsblNRMkZmWks2UnJjbEtldWZscU50aFlRd0tCZ1FEYTBHTHRcbmppaFZsbkxscXM0Ris3Q0ZEQUYwV3dyTnlEYVgzS28wVjFqQ1c1M3hLZTNZSlFEZGZHR2FpR2FzSGd4bUR5eG1cbm8rZXVlaUlsNC9ZRnUzWjdUWDRZWnFmSmJwRDJVcldCSldQSVlDUTcxNzJLV1ZhTndjSUk0NmJHWXF5THI5ejVcbnZ0UVNOMGZndmlGbVhjai9HS0R3VmlPNUpIVWdyMFRPM1RLWXl3S0JnUUNUSGY2R2tiOXRZbUV0MFRVOGlzQ3hcbk9TWDRKTGw0YjJKTXVLK242cnQ2V1VtdE84cGJqeGpDQVYyRnBSeFM5QklxUmJ4MmRBZlV6STNQc3VWUUVYYjdcbkxrSFpLMS9RbjdCVFlaa01OQjhzMW5TR2pkcXk3NkNDdEQ0SVpMM2dNWVZ0ckU5MDNleERzWFVGRzYwQnlpUW5cbnR6UlhJZ2RDSis3Nm5lRFlzVHpMOEE9PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImJpZ3F1ZXJ5LWpvb2tzLXByb2plY3QtNzg4QHNoaW5pbmctaGVhdC0yMDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTAyMDUxMDE1OTEwOTUzNjQ3MzgwIiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9iaWdxdWVyeS1qb29rcy1wcm9qZWN0LTc4OCU0MHNoaW5pbmctaGVhdC0yMDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"}
+[debug] [2025-01-08T14:49:30.238Z] Validating nodejs source
+[warn] !  functions: Runtime Node.js 16 was deprecated on 2024-01-30 and will be decommissioned on 2025-01-30, after which you will not be able to deploy without upgrading. Consider upgrading now to avoid disruption. See https://cloud.google.com/functions/docs/runtime-support for full details on the lifecycle policy 
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-01-08T14:49:31.075Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "@google-cloud/bigquery": "^5.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^5.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.3.0"
+  },
+  "private": true
+}
+[debug] [2025-01-08T14:49:31.075Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (5.0.1) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-01-08T14:49:31.077Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-08T14:49:31.087Z] Found firebase-functions binary at 'D:\MileAll\StatsJooks\StatsJooks\StatsJooksBigQuery\statsjooks\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8894
+
+[error] Failed to write service key file: ReferenceError: serviceKeyJson is not defined
+    at Object.<anonymous> (D:\MileAll\StatsJooks\StatsJooks\StatsJooksBigQuery\statsjooks\functions\index.js:39:34)
+    at Module._compile (node:internal/modules/cjs/loader:1740:14)
+    at Object..js (node:internal/modules/cjs/loader:1905:10)
+    at Module.load (node:internal/modules/cjs/loader:1474:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.require (node:internal/modules/cjs/loader:1496:12)
+    at require (node:internal/modules/helpers:135:16)
+    at loadModule (D:\MileAll\StatsJooks\StatsJooks\StatsJooksBigQuery\statsjooks\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-01-08T14:49:31.810Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8894/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8894/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-01-08T14:49:31.885Z] FetchError: request to http://127.0.0.1:8894/__/functions.yaml failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (C:\Users\LG\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:104:11)
+    at Socket.socketErrorListener (node:_http_client:518:5)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: An unexpected error has occurred.

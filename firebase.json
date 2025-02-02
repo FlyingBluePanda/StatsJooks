@@ -1,0 +1,22 @@
+{
+  "hosting": [
+    {
+      "target": "statsjooks-e80dd",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/v3/**",
+          "function": "apiV3"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "source": "functions"
+  }
+}
