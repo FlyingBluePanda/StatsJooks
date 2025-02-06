@@ -4,13 +4,12 @@
 
 // Import necessary React modules and dependencies
 import React, { useState, useEffect } from 'react';
-import { db } from '../../config/firebase';
-import { getDoc, doc } from "firebase/firestore";
+
 import LoadingSpinner from './LoadingSpinner';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
 import TableFooter from './TableFooter';
-import footstatsImage from '../../imgs/footstats.png';
+
 import './Stats.css';
 
 // API Base URL for fetching statistics data
